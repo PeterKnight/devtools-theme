@@ -1,9 +1,9 @@
 @charset "UTF-8";
-#-webkit-web-inspector .elements.panel .elements-tree-outline {
+.elements.panel .elements-tree-outline {
   padding: 5px 5px 5px 10px !important;
   line-height: 18px;
   background: #d9d9d9; }
-#-webkit-web-inspector .elements.panel .webkit-html-text-node.bogus {
+.elements.panel .webkit-html-text-node.bogus {
   margin: 0 2px;
   display: inline-block;
   vertical-align: middle;
@@ -15,7 +15,7 @@
   color: #7c7c7c;
   background: rgba(183, 183, 183, 0.4);
   border-radius: 3px; }
-  #-webkit-web-inspector .elements.panel .webkit-html-text-node.bogus:before {
+  .elements.panel .webkit-html-text-node.bogus:before {
     float: left;
     text-indent: 0;
     text-align: center;
@@ -23,45 +23,45 @@
     font-family: serif;
     content: "···";
     font-size: 17px; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li {
+.elements.panel .outline-disclosure ol li {
   margin: 0 !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li:before {
+.elements.panel .outline-disclosure ol li:before {
   margin-top: 2px;
   z-index: 3 !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol .highlight {
+.elements.panel .outline-disclosure ol .highlight {
   position: relative;
   z-index: 2; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li.hovered:not(.selected) .selection,
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li.hovered:not(.selected) .webkit-html-tag.close {
+.elements.panel .outline-disclosure ol li.hovered:not(.selected) .selection,
+.elements.panel .outline-disclosure ol li.hovered:not(.selected) .webkit-html-tag.close {
   background: rgba(86, 135, 169, 0.2) !important;
   border-radius: 0 !important;
   z-index: 2 !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li.hovered:not(.selected) .selection {
+.elements.panel .outline-disclosure ol li.hovered:not(.selected) .selection {
   left: 0 !important;
   right: 0 !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li.selected .selection,
-#-webkit-web-inspector .elements.panel .outline-disclosure ol li.selected .webkit-html-tag.close {
+.elements.panel .outline-disclosure ol li.selected .selection,
+.elements.panel .outline-disclosure ol li.selected .webkit-html-tag.close {
   background: rgba(0, 0, 0, 0.15) !important;
   z-index: 2 !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol:focus li.selected .selection,
-#-webkit-web-inspector .elements.panel .outline-disclosure ol:focus li.selected .webkit-html-tag.close {
+.elements.panel .outline-disclosure ol:focus li.selected .selection,
+.elements.panel .outline-disclosure ol:focus li.selected .webkit-html-tag.close {
   background: rgba(39, 101, 145, 0.7) !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol .children.expanded {
+.elements.panel .outline-disclosure ol .children.expanded {
   margin: 4px 0 !important;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
   margin-bottom: 18px !important; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol .children {
+.elements.panel .outline-disclosure ol .children {
   position: relative;
   padding-right: 6px !important; }
-  #-webkit-web-inspector .elements.panel .outline-disclosure ol .children li:last-child {
+  .elements.panel .outline-disclosure ol .children li:last-child {
     line-height: 0;
     background: none;
     margin: 0 -6px 0 -12px !important; }
-    #-webkit-web-inspector .elements.panel .outline-disclosure ol .children li:last-child > span {
+    .elements.panel .outline-disclosure ol .children li:last-child > span {
       width: 100%;
       display: block; }
-    #-webkit-web-inspector .elements.panel .outline-disclosure ol .children li:last-child .webkit-html-tag.close {
+    .elements.panel .outline-disclosure ol .children li:last-child .webkit-html-tag.close {
       line-height: 18px;
       position: absolute !important;
       padding-left: 16px;
@@ -69,6 +69,6 @@
       left: -14px;
       right: -6px;
       height: 18px; }
-#-webkit-web-inspector .elements.panel .outline-disclosure ol .parent {
+.elements.panel .outline-disclosure ol .parent {
   padding-left: 0 !important;
   margin-left: -3px !important; }
