@@ -11,10 +11,13 @@ $tab-size: 16px;
 // Elements panel
 .elements.panel {
   // Source container
-  .elements-tree-outline {
-    padding: 5px 5px 5px 10px !important;
-    line-height: 18px;
+  .outline-disclosure.source-code {
     background: $color-silver;
+  }
+
+  .elements-tree-outline {
+    padding: 5px 5px 5px 10px;
+    line-height: 18px;
   }
 
   // Ellipsis symbol
@@ -45,13 +48,13 @@ $tab-size: 16px;
   // Elements
   .outline-disclosure ol {
     li {
-      margin: 0 !important;
+      margin: 0;
     }
 
     // triange
     li:before {
       margin-top: 2px;
-      z-index: 3 !important;
+      z-index: 3;
     }
 
     .highlight {
@@ -62,48 +65,47 @@ $tab-size: 16px;
     // hover
     li.hovered:not(.selected) .selection,
     li.hovered:not(.selected) .webkit-html-tag.close {
-      background: rgba(#5687a9, .2) !important;
-      border-radius: 0 !important;
-      z-index: 2 !important;
+      background: rgba(#5687a9, .2);
+      border-radius: 0;
+      z-index: 2;
     }
     li.hovered:not(.selected) .selection {
-      left: 0 !important;
-      right: 0 !important;
+      left: 0;
+      right: 0;
     }
 
     // selected (blurred)
     li.selected .selection,
     li.selected .webkit-html-tag.close {
-      background: rgba(black, .15) !important;
-      z-index: 2 !important;
+      background: rgba(black, .15);
+      z-index: 2;
     }
 
     // selected (focused)
     &:focus {
       li.selected .selection,
       li.selected .webkit-html-tag.close {
-        background: rgba(#276591, .7) !important;
+        background: rgba(#276591, .7);
       }
     }
 
     // expanded branch
     .children.expanded {
-      margin: 4px 0 !important;
+      margin: 4px 0;
       background: rgba(white, .4);
-      box-shadow: 0 0 0 1px rgba(black, .04);
-      margin-bottom: 18px !important;
+      box-shadow: 0 0 0 1px rgba(black, .08);
+      margin-bottom: 18px;
     }
 
     // all children (expandable)
     .children {
       position: relative;
-      padding-right: 6px !important;
 
       // assumed close tag
       li:last-child {
         line-height: 0;
         background: none;
-        margin: 0 -6px 0 -12px !important;
+        margin: 0 0 0 -12px;
 
         > span {
           width: 100%;
@@ -113,11 +115,11 @@ $tab-size: 16px;
         // close tag
         .webkit-html-tag.close {
           line-height: 18px;
-          position: absolute !important;
+          position: absolute;
           padding-left: 16px;
           top: 0;
           left: -14px;
-          right: -6px;
+          right: 0;
           height: 18px;
         }
       }
@@ -125,8 +127,12 @@ $tab-size: 16px;
 
     // parent node
     .parent {
-      padding-left: 0 !important;
-      margin-left: -3px !important;
+      padding-left: 0;
+      margin-left: -3px;
     }
   }
+}
+
+.webkit-html-doctype {
+  color: rgba(black, .3);
 }
